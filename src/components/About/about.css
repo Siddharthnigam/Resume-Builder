@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.about {
+  height: auto;
+
+  width: 100%;
+  background-color: #d9dcc6;
+  display: flex;
+}
+.about-container {
+    padding: 20px;
+    max-width: 62%;
+    background-color: #d9dcc6;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-container h1,
+  .about-container h2 {
+    color: #344e41;
+    line-height: 40px;
+  }
+  .about-container h1{
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 50px;
+    animation: fadeSlide 3s ease-in-out forwards;
+    cursor: pointer;
+    text-shadow: 7px 7px 10px  rgb(146, 147, 142);
+
+
+  }
+  .about-container h1:hover{
+    text-decoration: underline;
+    scale: 98%;
+    
+  }
+  
+  .about-container p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .about-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .about-container ul li {
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  
+ 
+
+
+
+  .cont{
+    width: 35%;
+    display: grid;
+    justify-content: center;
+    line-height: 10px;
+    text-align: center;
+  }
+  .about{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .cont img{
+    border-radius: 100px;
+    width: 90%;
+    margin-left: 30px;
+    mix-blend-mode: multiply;
+    height: auto;
+
+  }
+
+
+
+
+  /* Keyframes for fading and sliding animation */
+@keyframes fadeSlide {
+  0% {
+      opacity: 0;
+      transform: translateY(-80px); /* Start slightly above */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* End at original position */
+  }
+}
+  
+
+
+  /* ABOUT 2============================================================================================ */
+
+
+
+/* Container for the form */
+.about2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #588157;
+}
+
+.ab1,
+.ab2 {
+  width: 48%;
+}
+
+.about2 h1{
+  font-size: 40px;
+  font-weight: 600;
+  color: #dad7cd;
+  margin-left: 50px;
+  text-shadow: 2px 7px 9px rgba(104, 87, 17, 0.67);
+cursor: pointer;
+}
+.ab1 li{
+  font-size: 20px;
+  font-weight: 600;
+  color: #dad7cd;
+  margin-left: 70px;
+line-height: 30px;
+
+
+}
+.ab1 h1:hover{
+  scale: 98%;
+}
+
+.ab1 h2{
+  font-size: 20px;
+  font-weight: 600;
+  color: #dad7cd;
+  margin-left: 50px;
+  
+line-height: 30px;
+margin-top: 10px;
+}
+
+
+
+
+
+
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #dad7cd;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #dad7cd;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+button[type="submit"] {
+  background-color: #adc178;
+  color: #344e41;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 26px;
+}
+
+button[type="submit"]:hover {
+  background-color:  #344e41;
+  color: #adc178;
+}

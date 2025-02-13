@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}/* tempelate.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.header1{
+    text-align: start;
+    width: 39vw;
+}
+
+.container3 {
+    width: 100%;
+
+    gap: 50px;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#resume-template{
+    margin-left: 100px;
+}
+
+
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Flex Container for Form and Template */
+.nahru1 {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+   
+}
+section{
+    width: 100%;
+}
+
+/* Resume Form Styles */
+.resume-form {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.resume-form div {
+    margin-bottom: 15px;
+}
+
+.resume-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
+ .resume-form input,
+.resume-form textarea,
+.resume-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.resume-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.resume-form button:hover {
+    background-color: #555;
+}
+
+/* Resume Template Styles */
+
+
+.hi, .section, .footer1 {
+    margin: 20px 0;
+   
+    padding: 10px;
+}
+
+.hi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hi  .h {
+    font-size: 24px;
+}
+
+.hi p {
+    margin: 5px 0;
+}
+
+.profile-pic {
+    border-radius: 50%;
+}
+
+
+.section1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section1 ul li {
+    margin-bottom: 10px;
+}
+
+.section1 ul li strong {
+    display: block;
+    font-size: 18px;
+}
+
+.footer1 p {
+    font-size: 14px;
+}
+
+
+
+
+
+.color{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+
+}
+.color button{
+    padding: 21px;
+    color: #fff;
+    background-color: #555;
+    border-radius: 10%;
+    width: 80px;
+}

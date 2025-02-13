@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.tem{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #dad7cd;
+}
+.tem img {
+    width: 20vw;
+    height: auto;
+}
+.conti{
+    width: 40%;
+}
+.conti h1{
+    font-size: 50px;
+    font-weight: 800;
+    color: #2f3e46;
+    line-height: 60px;
+    height: auto;
+    width: auto;
+    text-shadow: 5px 4px 11px rgb(139, 126, 112);
+}
+.conti h2{
+    color: #354f52;
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 5px 4px 11px rgb(156, 149, 140);
+
+}

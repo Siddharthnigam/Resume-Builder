@@ -1,0 +1,26 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.main69{
+  height: auto;
+
+  width: 100%;
+  color: #3a5a40;
+ display: flex;
+ background-color: #e0e1dd;
+ justify-content: center;
+}
+.cont69{
+  width: 90%;
+}
+.main69 h1{
+  font-size: 50px;
+  font-weight: 800;
+  color: #344e41;
+  text-shadow: 7px 7px 10px  rgb(146, 147, 142);
+  cursor: pointer;
+}
+h1:hover{
+  scale: 98%;
+}

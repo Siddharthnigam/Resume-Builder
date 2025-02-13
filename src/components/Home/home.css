@@ -1,0 +1,834 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.home1 {
+    width: 100%;
+height: auto;
+    background-color: #dad7cd;
+    animation: fadeSlide 3s ease-in-out forwards; 
+
+}
+#samosa{
+  text-decoration: none;
+  color: #fff9;
+}
+
+.right{
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  
+}
+.right img{
+  width: 340px;
+  height: 404px;
+  border-radius: 50%;
+  border: 10px solid rgb(80, 76, 76);
+
+  
+}
+.card0 {
+  width: 340px;
+  height: 404px;
+  background: rgba(211, 211, 211, 0.199);
+  position: absolute;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  margin-top: 50px;
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+#c1 {
+  background-color: black;
+}
+
+#c2 {
+  background-color: blue;
+}
+
+#c3 {
+  background-color: red;
+}
+
+#c4 {
+  background-color: green;
+}
+
+.main0:hover #c1 {
+  transform: translateX(-150px) rotate(-40deg);
+}
+
+.main0:hover #c2 {
+  transform: translateX(100px) rotate(-40deg);
+}
+
+.main0:hover #c3 {
+  transform: translateX(150px) rotate(-30deg);
+}
+
+.main0:hover #c4 {
+  transform: translateX(200px) rotate(-10deg);
+}
+
+#c1:hover {
+  transform: translateX(-150px) rotate(0deg) !important;
+}
+
+#c2:hover {
+  transform: translateX(-100px) rotate(0deg) !important;
+}
+
+#c3:hover {
+  transform: translateX(-50px) rotate(0deg) !important;
+}
+
+#c4:hover {
+  transform: translateX(50px) rotate(0deg) !important;
+}
+
+.main0{
+  display: grid;
+  height: 30vh;
+  place-items: center;
+}
+
+
+.split-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: auto;
+    gap: 20px;
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2f3e46;
+    overflow: hidden;
+    text-shadow: 7px 7px 12px  rgb(93, 121, 48);
+  }
+.split-text-container:hover {
+  scale: 99%;
+}
+
+.text-part {
+    display: inline-block;
+    position: relative;
+    transform: translateX(0);
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.text-part.left {
+    transform: translateX(-200%);
+    animation-name: slide-in-left;
+}
+
+.text-part.right {
+    transform: translateX(200%);
+    animation-name: slide-in-right;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.main1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main1 .left {
+    width: 50%;
+    height: auto;
+
+}
+
+.main1 .right {
+    width: 50%;
+    height: auto;
+}
+
+.sid {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.loading {
+    --speed-of-animation: 0.9s;
+    --gap: 6px;
+    --first-color: #4c86f9;
+    --second-color: #49a84c;
+    --third-color: #f6bb02;
+    --fourth-color: #f6bb02;
+    --fifth-color: #2196f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    gap: 6px;
+    margin-left: 100px;
+    height: 100px;
+}
+
+.loading span {
+    width: 4px;
+    height: 50px;
+    background: var(--first-color);
+    animation: scale var(--speed-of-animation) ease-in-out infinite;
+}
+
+.loading span:nth-child(2) {
+    background: var(--second-color);
+    animation-delay: -0.8s;
+}
+
+.loading span:nth-child(3) {
+    background: var(--third-color);
+    animation-delay: -0.7s;
+}
+
+.loading span:nth-child(4) {
+    background: var(--fourth-color);
+    animation-delay: -0.6s;
+}
+
+.loading span:nth-child(5) {
+    background: var(--fifth-color);
+    animation-delay: -0.5s;
+}
+
+@keyframes scale {
+
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.05);
+    }
+
+    20% {
+        transform: scaleY(1);
+    }
+}
+
+.main1 .p1 {
+    color: #2f3e46;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.main1 .p2 {
+    color: #2f3e46;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 55px;
+    margin-left: 100px;
+}
+
+.main1 .p3 {
+    color: #2f3e46;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-top: 25px;
+    margin-left: 100px;
+}
+
+/* From Uiverse.io by satyamchaudharydev */
+.main1 .button {
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding: 1rem 2rem 1rem 2rem;
+    padding-inline: 1.25rem;
+    background-color: #a3b18a;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 5px solid #2f3e46;
+    outline: none;
+    overflow: hidden;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+    color: #283618;
+}
+
+.button:hover .icon {
+    transform: translate(4px);
+}
+
+.button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+
+
+.marquee {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+}
+.marquee h1{
+    text-align: center;
+    color: #2f3e46;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+marquee{
+    margin-top: 20px;
+    scroll-behavior: smooth 5s;
+}
+
+.marquee svg {
+    margin-left: 100px;
+
+}
+
+
+@keyframes marquee {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+
+
+
+
+/* HOME 2 .............................................................. */
+
+
+
+
+
+.home2{
+  height: auto;
+  background-color: #a3b18a;
+    width: 100%;
+     animation:  3s ease-in-out forwards; 
+}
+.home2 hr{
+  width: 60%;
+
+}
+.home2 h1{
+    text-shadow: 2px 3px 7px rgba(218, 215, 205, 0.67);
+    color: #22223b;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 55px;
+    padding-top: 10px;
+}
+.one{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+/* From Uiverse.io by Prince4fff */ 
+
+.card p {
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 25px;
+    color: #666;
+  }
+  
+  .card p.small {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #666;
+
+
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #588157;
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  
+  .card1 {
+    display: block;
+    position: relative;
+    width: 20vw;
+    background-color: #dad7cd;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    height: 20vh;
+  }
+  
+  
+  .card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #588157;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .card1:hover:before {
+    transform: scale(21);
+  }
+  
+  .card1:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card1:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #fff;
+  }
+  
+  .card2 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+  }
+  
+  .card2:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  .card2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #00838d;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+  }
+  
+  .card2:hover:before {
+    transform: scale(2.15);
+  }
+  
+  .card3 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+  }
+  
+  .card3 .go-corner {
+    opacity: 0.7;
+  }
+
+  
+  .card3:hover {
+    border: 1px solid #00838d;
+    box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+    z-index: 500;
+  }
+  
+  .card3:hover p {
+    color: #00838d;
+  }
+  
+  .card3:hover .go-corner {
+    transition: opactiy 0.3s linear;
+    opacity: 1;
+  }
+  
+  .card4 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+  
+  .card4 .go-corner {
+    background-color: #00838d;
+    height: 100%;
+    width: 16px;
+    padding-right: 9px;
+    border-radius: 0;
+    transform: skew(6deg);
+    margin-right: -36px;
+    align-items: start;
+    background-image: linear-gradient(-45deg, #8f479a 1%, #dc2a74 100%);
+  }
+  
+  .card4 .go-arrow {
+    transform: skew(-6deg);
+    margin-left: -2px;
+    margin-top: 9px;
+    opacity: 0;
+  }
+  
+  .card4:hover {
+    border: 1px solid #cd3d73;
+  }
+  
+  .card4 h3 {
+    margin-top: 8px;
+  }
+  
+  .card4:hover .go-corner {
+    margin-right: -12px;
+  }
+  
+  .card4:hover .go-arrow {
+    opacity: 1;
+  }
+
+
+
+  /*  HOME 3 ..................................................................... */
+
+ .home3{
+    width: 100%;
+    height: auto;
+
+    background-color: #588157;
+  }
+
+
+
+
+/* App.css */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+.main2{
+  width: 100%;
+  display: flex;
+ 
+  justify-content: space-evenly;
+}
+.imageslider{
+  width: 40%;
+  height: auto;
+  object-fit: contain;
+}
+.imageslider img{
+  width: 100%;
+  height: auto;
+}
+
+.imageslider div{
+  width: auto;
+  height: 700px;
+  object-fit: cover;
+}
+
+.con{
+  width: 40%;
+
+}
+
+/* Keyframes for fading and sliding animation */
+@keyframes fadeSlide {
+  0% {
+      opacity: 0;
+      transform: translateY(-80px); /* Start slightly above */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* End at original position */
+  }
+}
+
+/* Class for the animated text */
+.animated-text {
+  font-size: 2.5rem; /* Adjust font size as needed */
+  color: #22223b; /* Change text color */
+  animation: fadeSlide 3s ease-in-out forwards; /* Animation properties */
+  font-weight: 800;
+  text-shadow: 3px 4px 4px rgba(218, 215, 205, 1);
+
+}
+
+.con ul{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #dad7cd;
+
+}
+
+
+
+
+/*   HOME 4 .......................................................................................   */
+
+
+
+.head3{
+  width: 100%;
+  height: auto;
+
+  background-color: #a3b18a;}
+.container1 h1{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 800;
+  text-shadow: 2px 3px 7px rgba(218, 215, 205, 0.67);
+  color: #22223b;
+
+}
+.eyes {
+  position: relative;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+
+}
+.eye {
+  width: 240px;
+  height: 120px;
+  background: #dad7cd;
+  display: inline-block;
+  margin: 30px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.pupil1 {
+  width: 60px;
+  height: 60px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 15px solid #333;
+}
+
+.sid3{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -50px;
+
+}
+.sid3 .first{
+  width: 28%;
+
+}
+.container1 img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 5px solid black;
+}
+.container1 p{
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #22223b;
+  text-shadow: 2px 3px 7px rgba(218, 215, 205, 0.67);
+}
+.container1 .papa{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #22223b;
+  text-shadow: 2px 3px 7px rgba(218, 215, 205, 0.67);
+
+}
+
+/*     Home 5............................................................................0 */
+
+
+.home5{
+  height: auto;
+  width: 100%;
+background-color: #dad7cd;
+}
+.home5 h1{
+  color:#344e41;
+  font-size: 70px;
+  font-weight: 800;
+  text-shadow: 2px 3px 7px rgba(155, 128, 40, 0.67);
+
+}
+.home51{
+  width: 100%;
+  display: flex;
+}
+.hom1{
+  width: 60%;
+
+}
+.hom1 ul{
+  margin-left: 50px;
+}
+.hom1 li{
+  font-size: 23px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.hom1 h2{
+  font-size: 43px;
+  font-weight: 600;
+  text-shadow: 2px 3px 7px rgba(6, 5, 1, 0.67);
+}
+
+.hom2{
+  width: 40%;
+}
+.hom2 img{
+  width: 70%;
+  height: auto;
+  border-radius: 30%;
+  mix-blend-mode: darken;
+  border: 5px solid black;
+  box-shadow: 29px 27px 16px -11px rgba(162,165,148,0.63);
+-webkit-box-shadow: 29px 27px 16px -11px rgba(162,165,148,0.63);
+-moz-box-shadow: 29px 27px 16px -11px rgba(162,165,148,0.63);
+}
+.hom2 h2{
+  color: #283618;
+  font-size: 45px;
+  font-weight: 800;
+  text-shadow: 2px 3px 7px rgba(155, 128, 40, 0.67);
+  line-height: 45px;
+}
